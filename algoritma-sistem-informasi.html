@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Algoritma Sistem Informasi - BELAJAR</title>
+    <meta name="description" content="Algoritma Sistem Informasi, , , , , , , 0, , , , , , 0, algoritma-sistem-informasi, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Algoritma Sistem Informasi - BELAJAR" />
+    <meta property="og:description" content="Algoritma Sistem Informasi, , , , , , , 0, , , , , , 0, algoritma-sistem-informasi, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Algoritma Sistem Informasi - BELAJAR" />
+    <meta name="twitter:description" content="Algoritma Sistem Informasi, , , , , , , 0, , , , , , 0, algoritma-sistem-informasi, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://padamunegeri.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://padamunegeri.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://padamunegeri.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://padamunegeri.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://padamunegeri.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://padamunegeri.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://padamunegeri.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://padamunegeri.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://padamunegeri.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://padamunegeri.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Algoritma Sistem Informasi</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">sari394wulandari</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Algoritma+Sistem+Informasi" alt="Algoritma Sistem Informasi">
+                    </div>
+                    <p></p>
+                    <p>Algoritma apa yang cocok untuk pengelompokkan data pada sistem informasi berbasis web?</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#algoritma-apa-yang-cocok-untuk-pengelompokkan-data-pada-sistem-informasi-berbasis-web">1.
+                                            Algoritma apa yang cocok untuk pengelompokkan data pada sistem informasi berbasis web?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#algoritma-apa-saja-yang-tepat-digunakan-untuk-sistem-informasi-pencatatan-atau-pengolahan-data">2.
+                                            algoritma apa saja yang tepat digunakan untuk sistem informasi pencatatan atau pengolahan data?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mata-kuliah-sistem-informasi-geografis-buatlah-algoritma-untuk-menghitung-luas-segitiga-adalah">3.
+                                            Mata kuliah sistem informasi geografis 
+buatlah algoritma untuk menghitung luas segitiga adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-menyusun-algoritmairutan-penyelesaian-dalam-mencari-informasi-melalui-internet%e2%80%8b">4.
+                                            sebutkan menyusun algoritma(irutan penyelesaian) dalam mencari informasi melalui internet​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#algoritma-merupakan-proses-memusatkan-perhatian-pada-informasi-yang-penting-saja-atau-dengan-mengabaikan-detail-yang-tidak-relevan-benarsalah%e2%80%8b">5.
+                                            Algoritma merupakan proses memusatkan perhatian pada informasi yang penting saja atau dengan mengabaikan detail yang tidak relevan (benar/salah?)​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-mengapa-robot-bisa-menggantikan-pekerjaan-manusia-lewat-sistem-algoritma-komputer%e2%80%8b">6.
+                                            Jelaskan Mengapa Robot Bisa Menggantikan Pekerjaan Manusia, Lewat Sistem Algoritma Komputer?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-bagaimana-rangkaian-yang-terdapat-pada-algoritma2-bagaimana-proses-algoritma-dalam-menganalisis-data-dan-informasi-tolong-bntu-jawab-besok-dikumpull%e2%80%8b">7.
+                                            1. Bagaimana rangkaian yang terdapat pada algoritma?2. Bagaimana proses algoritma dalam menganalisis data dan informasi? tolong bntu jawab, besok dikumpull​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#algoritma-pemrograman-untuk-berbagai-macam-fungsi-yang-penting-algoritma-pemrograman-mungkin-sudah-tidak-asing-lagi-bagi-anda-yang-bekerja-di-suatu-perusahaan-dan-bekerja-di-bidang-pemrograman-su">8.
+                                            Algoritma Pemrograman untuk Berbagai Macam Fungsi Yang Penting     Algoritma pemrograman mungkin sudah tidak asing lagi bagi Anda yang bekerja di suatu perusahaan dan bekerja di bidang pemrograman. Suatu program sudah tentu sangat dibutuhkan kehadirannya terutama pada suatu perusahaan. Penggunaan program untuk suatu sistem komputasi memang sudah menjadi hal yang biasa di masa seperti sekarang ini. Bahkan penggunaan berbagai program selalu dianjurkan karena dengan adanya program maka segala hal bisa dilakukan dengan lebih mudah. Penggunaan program juga bisa dilakukan dengan lebih praktis sehingga bisa mempermudah pekerjaan Anda dan memberikan hasil yang lebih maksimal.     Algoritma sendiri sebenarnya merupakan berbagai macam langkah yang diambil secara logis untuk menyelesaikan segala permasalahan yang ada. Berbagai langkah logis ini tentunya disusun secara terstruktur dan sistematis, sehingga bisa memberikan solusi yang paling tepat bagi penggunanya. Jika dilihat dari sejarahnya maka pada awalnya penggunaan algoritma ini hanya diperuntukkan perhitungan saja terutama dalam ilmu matematika. Namun tampaknya seiring dengan berjalannya waktu maka penggunaan fungsi dari algoritma ini semakin meluas. Algoritma tidak hanya menjadi penyelesaian bagi masalah di dunia perhitungan saja tetapi juga merambah ke hal yang lebih modern. Misalnya saja digunakan untuk menyelesaikan permasalahan yang timbul dalam hal pemrograman komputer. 1.) Berdasarkan informasi di atas, bagaimanakah hubungan antara algoritma pemrograman dengan program? 2.) Berdasarkan informasi di atas, bagaimanakah makna dari algoritma? 3.) Berdasarkan informasi di atas, bilamanakah penggunaan algoritma jika dilihat dari sejarahnya?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-apa-yang-anda-pahami-tentang-algoritma-yang-bekerja-di-dalam-sistem-komputerjawab-ya-pls-mau-dikumpulin-sekarang%e2%80%8b">9.
+                                            Jelaskan apa yang Anda pahami tentang algoritma yang bekerja di dalam sistem komputerJawab ya pls mau dikumpulin sekarang!!!!!!!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-algoritma-keamanan-pada-sistem-operasi-jaringan">10.
+                                            Tuliskan algoritma keamanan pada sistem operasi jaringan ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikan-contoh-bentuk-algoritmasistemnya%e2%80%8b">11.
+                                            Berikan contoh bentuk algoritma(sistemnya)​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-jenis-jenis-struktur-algoritma-pada-sistem-pemrogaman%e2%80%8b">12.
+                                            sebutkan jenis jenis struktur algoritma pada sistem pemrogaman​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-tigamacam-macam-algoritma-sistem-pakar">13.
+                                            sebutkan tiga(macam-macam) algoritma sistem pakar</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pada-algoritma-routing-link-state-terdapat-paket-kecil-dari-informasi-routing-yang-dikirim-antar-router-yang-disebut">14.
+                                            pada algoritma routing link state, terdapat paket kecil dari informasi routing yang dikirim antar router yang disebut</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-dan-jelaskan-macam-macam-algoritma-dalam-sistem-operasi-jaringan">15.
+                                            sebutkan dan jelaskan macam macam algoritma dalam sistem operasi jaringan</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#hal-hal-yang-berhubungan-dengan-logika-dan-algoritma-sistem-komputer%e2%80%8b">16.
+                                            Hal-hal yang berhubungan dengan logika dan algoritma sistem komputer​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#dalam-algoritma-mengkonversi-suhu-dari-satuan-celcius-ke-satuan-lain-pengguna-harus-memilih-satuan-hasil-konversi-setelah-itu-algoritma-akan-menghitung-hasil-konversi-berdasarkan-pilihannya-tentu">17.
+                                            Dalam algoritma mengkonversi suhu dari satuan celcius ke satuan lain , pengguna harus memilih satuan hasil konversi , setelah itu algoritma akan menghitung hasil konversi berdasarkan pilihannya. Tentukan ekspresi dan penugasan apa saja yang ada dalam algoritma tersebut. Cari informasi mengenai rumus konversi suhu</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#carilah-informasi-tentang-bagaimana-hubungan-antara-algoritma-program-dan-komputer%e2%80%8b">18.
+                                            carilah informasi tentang bagaimana hubungan antara algoritma, program dan komputer​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-bentuk-algoritma-dari-google-dalam-mencari-informasi-sapa-taukan-saya-tau-algoritmanya-membuat-sebuah-pencarian-hanya-menggunakan-earphonev%e2%80%8b">19.
+                                            Bagaimana Bentuk Algoritma Dari Google Dalam Mencari Informasi.Sapa Taukan Saya tau algoritmanya membuat sebuah pencarian hanya menggunakan earphone:v​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sekumpulan-perintah-yang-dijalankan-sesuai-dengan-urutan-algoritmapada-sistem-komputer-disebut-sebagai%e2%80%8b">20.
+                                            sekumpulan perintah yang dijalankan sesuai dengan urutan algoritma,pada sistem komputer disebut sebagai?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tujuan-dari-pattern-recognation-adalah-a-membuat-algoritma-yang-berjalan-susuai-sistem-b-agar-seseorang-dapat-memprediksi-hal-yang-akan-terjadi-setelahnya-c-memecah-masalah-menjadi-bagian">21.
+                                            Tujuan dari Pattern Recognation adalah... a. Membuat algoritma yang berjalan susuai sistem b. Agar seseorang dapat memprediksi hal yang akan terjadi setelahnya c. Memecah masalah menjadi bagian – bagian kecil yang lebih sederhana d. Agar dapat fokus pada informasi penting saja​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-mengapa-algoritma-tidak-bergantung-pada-perangkat-keras-dan-sistem-operasi%e2%80%8b">22.
+                                            jelaskan mengapa algoritma tidak bergantung pada perangkat keras dan sistem operasi​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-algoritma-penjadwalan-sistem-operasi">23.
+                                            Jelaskan algoritma penjadwalan sistem operasi</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-flowchart-dari-algoritma-menyebarkan-informasi-berikut-ini1mendapatkan-informasi2apakah-informasi-ini-hoax-jika-ya-maka-informasi-tidak-disebarkan-jika-tidak-maka-pikirkan-manfaatnya-3">24.
+                                            Buatlah Flowchart dari Algoritma menyebarkan informasi berikut ini!
+1)Mendapatkan Informasi
+2)Apakah informasi ini hoax? Jika Ya maka informasi tidak disebarkan, jika tidak maka pikirkan manfaatnya.
+3)Apakah informasi bermanfaat? Jika Ya maka informasi disebarkan, jika tidak maka informasi tidak disebarkan</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#algoritma-yang-mencari-informasi-berdasarkan-kata-kunci-mulai-dari-awal-array-hingga-akhir-array-adalah">25.
+                                            Algoritma yang mencari informasi berdasarkan kata kunci mulai dari awal array hingga akhir array adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#halo-guys-ada-saran-algoritma-apa-yang-tepat-buat-sistem-rekomendasi-pemilihan-sekolah-terimakasih">26.
+                                            Halo guys ! ada saran algoritma apa yang tepat buat sistem rekomendasi pemilihan sekolah? Terimakasih</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#carilah-informasi-melalui-media-internet-tentang-logika-dan-algoritma">27.
+                                            Carilah informasi melalui media internet tentang "logika dan algoritma"</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-perbedaan-algoritma-pengecekan-spelling-dan-freshness-serta-peran-algoritma-tersebut-dalam-proses-pencarian-informasi-%e2%80%8b">28.
+                                            Jelaskan perbedaan algoritma pengecekan spelling dan freshness, serta peran algoritma tersebut dalam proses pencarian informasi.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#siapakah-yang-menemukan-sistem-algoritma%e2%80%8b">29.
+                                            Siapakah yang menemukan sistem algoritma?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-perkaitan-antara-algoritma-dan-sistem-komputer">30.
+                                            Apakah perkaitan antara algoritma dan sistem komputer?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-perbedaan-algoritma-pengecekan-spelling-dan-freshness-serta-peran-algoritma-tersebut-dalam-proses-pencarian-informasi-pliesss-jawb-dengn-bnr">31.
+                                            Jelaskan perbedaan algoritma pengecekan spelling dan freshness serta peran algoritma tersebut dalam proses pencarian informasi. pliesss jawb dengn bnr</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-algoritma-mengenai-cara-menghapus-software-dalam-sistem-operasi-windows-7%e2%80%8b">32.
+                                            buatlah algoritma mengenai cara menghapus software dalam sistem operasi windows 7​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buat-activity-diagram-tentang-penjualan-online-kalian-buat-dulu-prosedur-sistem-berjalannya-algoritmanya">33.
+                                            buat activity diagram tentang penjualan online, kalian buat dulu prosedur sistem berjalannya (algoritmanya).</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bidang-yang-mempelajari-tentang-komponen-komputer-sistem-operasi-bagaimana-data-dan-program-disimpan-dalam-memori-adalah-a-berpikir-komputasional-b-teknologi-informasi-dan-komunikasi-c-siste">34.
+                                            Bidang yang mempelajari tentang komponen komputer, sistem operasi, bagaimana data dan program disimpan dalam memori adalah .... a. berpikir komputasional b. teknologi informasi dan komunikasi c. sistem komputer d. analisis data e. algoritma dan pemrograman ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#algoritma-menghapus-software-sistem-operasi-windows-7">35.
+                                            algoritma menghapus software sistem operasi windows 7</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#2-jika-anda-seorang-analis-sistem-apa-fungsi-tahap-algoritma-menurut-anda-jelaskan">36.
+                                            2.	Jika anda seorang Analis Sistem, apa fungsi tahap Algoritma menurut anda, jelaskan </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-algoritmanaturalflowchart-untuk-sistem-perpustakaan">37.
+                                            buatlah algoritma(natural+flowchart) untuk sistem perpustakaan</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tulis-algoritma-membuat-jus-alpukat-dengan-kondisi-memakai-sistem-atau-tidak%e2%80%8b">38.
+                                            tulis algoritma membuat jus alpukat dengan kondisi memakai sistem atau tidak​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jenis-algoritma-penjadwalan-dengan-sistem-giliran-menggunakan-waktu-kuantum-adalah-%e2%80%8b">39.
+                                            Jenis algoritma penjadwalan dengan sistem giliran menggunakan waktu kuantum adalah ....​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#carilah-informasi-tentang-bagaimana-hubungan-antara-algoritma-program-dan-komputer%e2%80%8b">40.
+                                            carilah informasi tentang bagaimana hubungan antara algoritma, program dan komputer​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="algoritma-apa-yang-cocok-untuk-pengelompokkan-data-pada-sistem-informasi-berbasis-web">
+                            1. Algoritma apa yang cocok untuk pengelompokkan data pada sistem informasi berbasis web?</h2><br />
+                        &gt;&gt; ALGORITMA<br /><br />Algoritma yang cocok untuk pengelompokan data adalah algoritma spectral clusterling. Algoritma ini mampu mengklasifikasikan data dan dapat dipakai untuk sistem informasi berbasis web. <br />
+                                            <h2 class="ez-toc-section" id="algoritma-apa-saja-yang-tepat-digunakan-untuk-sistem-informasi-pencatatan-atau-pengolahan-data">
+                            2. algoritma apa saja yang tepat digunakan untuk sistem informasi pencatatan atau pengolahan data?</h2><br />
+                        Mapel : TI<br />Materi : Algoritma <br /><br />--Soal--<br /><br />Algoritma apa saja yang tepat digunakan untuk sistem informasi pencatatan atau pengolahan data?<br /><br />--Jawaban--<br /><br />Dalam ilmu matematika dan komputer, pengertian algoritma adalah suatu prosedur dari langkah demi langkah untuk penghitungan. <br /><br />Berdasarkan jenis algoritma, jenis yang paling tepat digunakan untuk sistem informasi pencatatan atau pengolahan data adalah FLOWCHART.<br /><br />Flowchart atau Diagram Alir merupakan metode menggambarkan suatu sistem algoritma dalam bentuk struktur atau bentuk diagram. Kelebihan dari metode ini adalah algoritma di gambarkan dalam bentuk tertentu dan lebih mudah dipahami oleh orang lain.Dengan metode jenis ini, kita dapat melakukan sistem informasi pencatatan atau pengolahan data dengan mudah secara bentuk struktur atau bentuk diagram yang mudah dimengerti banyak orang.<br /><br />Semoga membantu.<br /><br />
+                                            <h2 class="ez-toc-section" id="mata-kuliah-sistem-informasi-geografis-buatlah-algoritma-untuk-menghitung-luas-segitiga-adalah">
+                            3. Mata kuliah sistem informasi geografis 
+buatlah algoritma untuk menghitung luas segitiga adalah</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>sudah tertera di gambar:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-menyusun-algoritmairutan-penyelesaian-dalam-mencari-informasi-melalui-internet%e2%80%8b">
+                            4. sebutkan menyusun algoritma(irutan penyelesaian) dalam mencari informasi melalui internet​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Ada 10 cara urutan penyelesaian dalam menyusun algoritma.</p><p><strong>Penjelasan:</strong></p><p>Tentu, berikut beberapa langkah dalam penyelesaian algoritma untuk mencari informasi melalui internet:</p><p></p><p>1. <strong>Definisikan</strong> <strong>Tujuan</strong> : Tentukan informasi yang ingin Anda cari dengan jelas.</p><p></p><p>2. <strong>Pilih</strong> <strong>Mesin</strong> <strong>Pencari</strong> :Gunakan mesin pencari seperti Google, Bing, atau Yahoo untuk memulai pencarian.</p><p></p><p>3. <strong>Pembentukan</strong> <strong>Kata</strong> <strong>Kunci</strong> : Identifikasi kata kunci yang paling relevan dengan informasi yang Anda cari.</p><p></p><p>4. <strong>Gunakan</strong> <strong>Operator</strong> <strong>Pencarian</strong> : Gunakan operator seperti tanda kutip ("") untuk mencari frasa spesifik, tanda minus (-) untuk mengkecualikan kata tertentu, atau site: untuk membatasi pencarian ke situs tertentu.</p><p></p><p>5. <strong>Evaluasi</strong> <strong>Sumber</strong> <strong>Informasi</strong> : Tinjau hasil pencarian dan pertimbangkan keandalan dan otoritas sumber informasi.</p><p></p><p>6. <strong>Penyaringan</strong> <strong>Hasil</strong> : Gunakan fitur penyaringan (jika ada) untuk mempersempit hasil pencarian berdasarkan tanggal, tipe file, dan lainnya.</p><p></p><p>7. <strong>Baca</strong> <strong>Konten</strong> <strong>dengan</strong> <strong>Kritis</strong> : Saat membaca artikel atau sumber informasi, pertimbangkan konteks, fakta, dan potensi bias.</p><p></p><p>8. <strong>Cek</strong> <strong>Fakta</strong> : Periksa informasi dengan sumber lain jika mungkin, terutama jika informasi krusial.</p><p></p><p>9. <strong>Simpan</strong> <strong>dan</strong> <strong>Catat</strong> <strong>Informasi</strong> : Simpan atau catat informasi yang relevan untuk referensi selanjutnya.</p><p></p><p>10. <strong>Kesimpulan</strong> : Refleksikan informasi yang Anda temukan dan aplikasikan sesuai dengan tujuan awal Anda.</p><p></p><p>Itulah cara penyelesaian menyusun algoritma internet. Selengkapnya bisa DM di instagram : jokitugasmrh:) </p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="algoritma-merupakan-proses-memusatkan-perhatian-pada-informasi-yang-penting-saja-atau-dengan-mengabaikan-detail-yang-tidak-relevan-benarsalah%e2%80%8b">
+                            5. Algoritma merupakan proses memusatkan perhatian pada informasi yang penting saja atau dengan mengabaikan detail yang tidak relevan (benar/salah?)​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Salah</p><p><strong>Penjelasan:</strong></p><p>Algoritma merupakan sekumpulan langkah-langkah yang terstruktur dan sistematis yang digunakan untuk menyelesaikan suatu masalah. Algoritma biasanya digunakan untuk memproses data dan menghasilkan output yang diinginkan. Algoritma tidak terkait dengan proses memusatkan perhatian pada informasi yang penting saja atau mengabaikan detail yang tidak relevan. Namun, dalam penyelesaian masalah, biasanya algoritma akan menggunakan prinsip efisiensi dan efektivitas untuk menyelesaikan masalah dengan cara yang terbaik.</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-mengapa-robot-bisa-menggantikan-pekerjaan-manusia-lewat-sistem-algoritma-komputer%e2%80%8b">
+                            6. Jelaskan Mengapa Robot Bisa Menggantikan Pekerjaan Manusia, Lewat Sistem Algoritma Komputer?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>karena robot dapat membantu manusia untuk segala keperluan yang mana akan menjadi lebih mudah </p><br />
+                                            <h2 class="ez-toc-section" id="1-bagaimana-rangkaian-yang-terdapat-pada-algoritma2-bagaimana-proses-algoritma-dalam-menganalisis-data-dan-informasi-tolong-bntu-jawab-besok-dikumpull%e2%80%8b">
+                            7. 1. Bagaimana rangkaian yang terdapat pada algoritma?2. Bagaimana proses algoritma dalam menganalisis data dan informasi? tolong bntu jawab, besok dikumpull​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p><strong>Penjelasan:</strong></p><p>1. **Rangkaian dalam Algoritma:**</p><p>Rangkaian dalam algoritma merujuk pada langkah-langkah atau tindakan yang dijalankan secara berurutan untuk mencapai tujuan tertentu. Rangkaian ini adalah serangkaian instruksi atau perintah yang harus diikuti oleh komputer atau pelaku dalam menjalankan suatu tugas atau pemecahan masalah. Setiap langkah dalam rangkaian memiliki urutan yang harus diikuti, dan berbagai keputusan atau kondisi juga dapat mempengaruhi aliran rangkaian tersebut. Contohnya, dalam algoritma pengurutan bilangan, ada rangkaian langkah-langkah yang mengatur bagaimana bilangan-bilangan diurutkan satu sama lain.</p><p></p><p>2. **Proses Algoritma dalam Menganalisis Data dan Informasi:**</p><p>Proses algoritma dalam menganalisis data dan informasi melibatkan beberapa langkah untuk memproses, memahami, dan mengambil keputusan berdasarkan data yang ada. Berikut adalah gambaran umum proses algoritma dalam menganalisis data dan informasi:</p><p></p><p>- **Pengumpulan Data:** Pertama-tama, data dan informasi yang relevan dikumpulkan dari berbagai sumber.</p><p></p><p>- **Pemrosesan Data:** Data yang telah dikumpulkan diolah dengan menggunakan langkah-langkah yang telah dirancang dalam algoritma. Ini mungkin melibatkan pengurutan, filter, penghitungan, dan transformasi data.</p><p></p><p>- **Analisis Data:** Setelah data diolah, analisis dilakukan untuk mendapatkan wawasan atau informasi dari data tersebut. Ini bisa termasuk pengidentifikasian tren, pola, anomali, atau hubungan antar data.</p><p></p><p>- **Pengambilan Keputusan:** Berdasarkan hasil analisis, keputusan atau tindakan dapat diambil. Keputusan ini mungkin berkaitan dengan strategi bisnis, rekomendasi, atau tindakan lainnya.</p><p></p><p>- **Presentasi Hasil:** Hasil analisis dan keputusan yang diambil dapat dipresentasikan dalam bentuk laporan, grafik, atau visualisasi lainnya untuk memudahkan pemahaman dan komunikasi.</p><p></p><p>- **Evaluasi dan Iterasi:** Proses analisis data sering kali melibatkan evaluasi terhadap hasil yang telah diambil. Jika diperlukan, algoritma dapat direvisi atau diiterasi untuk memperbaiki hasil atau menggali lebih dalam.</p><p></p><p>Dalam keseluruhan proses ini, algoritma berperan dalam membimbing langkah-langkah yang perlu diambil untuk menganalisis data dan informasi dengan cara yang terstruktur dan efisien.</p><p>1. Rangkaian dalam algoritma mengacu pada urutan langkah-langkah yang harus diikuti dalam menyelesaikan suatu masalah atau tugas. Rangkaian ini terdiri dari beberapa instruksi atau perintah yang harus dieksekusi secara berurutan. Setiap instruksi dalam rangkaian memiliki tujuan tertentu dan membantu mencapai solusi akhir. Rangkaian ini memungkinkan algoritma untuk secara sistematis mengatur dan memproses informasi.</p><p></p><p>2. Proses algoritma dalam menganalisis data dan informasi melibatkan langkah-langkah berikut:</p><p></p><p>   a. Pengumpulan data dan informasi relevan: Dalam tahap ini, algoritma mengumpulkan data dan informasi yang diperlukan untuk analisis. Ini dapat melibatkan mengakses basis data, mengambil data dari sumber eksternal, atau meminta input dari pengguna.</p><p></p><p>   b. Preprocessing data: Data yang dikumpulkan kemudian diproses untuk membersihkan dan mengorganisirnya agar dapat digunakan dalam analisis lebih lanjut. Ini mencakup penghapusan outlier, pemfilteran, normalisasi, dan transformasi data jika diperlukan.</p><p></p><p>   c. Analisis data: Pada tahap ini, algoritma menerapkan metode analisis yang sesuai untuk menghasilkan wawasan atau informasi baru dari data yang tersedia. Ini dapat melibatkan metode statistik, machine learning, atau teknik analisis lainnya sesuai dengan kebutuhan.</p><p></p><p>   d. Interpretasi dan pemahaman hasil: Setelah analisis selesai, algoritma menghasilkan hasil yang perlu diinterpretasikan. Hasil ini dapat berupa pola, tren, hubungan, atau temuan lainnya yang mungkin memberikan wawasan baru atau informasi yang berharga.</p><p></p><p>   e. Pengambilan keputusan: Hasil analisis digunakan untuk pengambilan keputusan atau memberikan rekomendasi. Algoritma dapat menyajikan hasil secara intuitif dengan visualisasi atau memberikan rekomendasi berdasarkan aturan yang ditetapkan sebelumnya.</p><p></p><p>Proses algoritma dalam menganalisis data dan informasi dapat sangat bervariasi tergantung pada jenis data, metode analisis yang diterapkan, dan kebutuhan yang spesifik.</p><br />
+                                            <h2 class="ez-toc-section" id="algoritma-pemrograman-untuk-berbagai-macam-fungsi-yang-penting-algoritma-pemrograman-mungkin-sudah-tidak-asing-lagi-bagi-anda-yang-bekerja-di-suatu-perusahaan-dan-bekerja-di-bidang-pemrograman-su">
+                            8. Algoritma Pemrograman untuk Berbagai Macam Fungsi Yang Penting     Algoritma pemrograman mungkin sudah tidak asing lagi bagi Anda yang bekerja di suatu perusahaan dan bekerja di bidang pemrograman. Suatu program sudah tentu sangat dibutuhkan kehadirannya terutama pada suatu perusahaan. Penggunaan program untuk suatu sistem komputasi memang sudah menjadi hal yang biasa di masa seperti sekarang ini. Bahkan penggunaan berbagai program selalu dianjurkan karena dengan adanya program maka segala hal bisa dilakukan dengan lebih mudah. Penggunaan program juga bisa dilakukan dengan lebih praktis sehingga bisa mempermudah pekerjaan Anda dan memberikan hasil yang lebih maksimal.     Algoritma sendiri sebenarnya merupakan berbagai macam langkah yang diambil secara logis untuk menyelesaikan segala permasalahan yang ada. Berbagai langkah logis ini tentunya disusun secara terstruktur dan sistematis, sehingga bisa memberikan solusi yang paling tepat bagi penggunanya. Jika dilihat dari sejarahnya maka pada awalnya penggunaan algoritma ini hanya diperuntukkan perhitungan saja terutama dalam ilmu matematika. Namun tampaknya seiring dengan berjalannya waktu maka penggunaan fungsi dari algoritma ini semakin meluas. Algoritma tidak hanya menjadi penyelesaian bagi masalah di dunia perhitungan saja tetapi juga merambah ke hal yang lebih modern. Misalnya saja digunakan untuk menyelesaikan permasalahan yang timbul dalam hal pemrograman komputer. 1.) Berdasarkan informasi di atas, bagaimanakah hubungan antara algoritma pemrograman dengan program? 2.) Berdasarkan informasi di atas, bagaimanakah makna dari algoritma? 3.) Berdasarkan informasi di atas, bilamanakah penggunaan algoritma jika dilihat dari sejarahnya?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. Penentuan algoritma dalam pemrograman ini merupakan hal dasar yang harus diketahui dan menjadi tahap awal dalam pembuatan program. Algoritma pemrograman merupakan dasar pijakan dalam menciptakan suatu program pada komputer. Algoritma adalah suatu urutan atau alur yang dipakai dalam perhitungan atau pemecahan masalah secara sistematis dan dalam aktivitas pemrograman, yang selanjutnya diubah dalam bentuk bahasa progam untuk dieksesusi oleh komputer.</p><p>2. Algoritma didefinisikan sebagai prosedur dari berbagai macam langkah penghitungan, penalaran secara otomatis, sampai pemrosesan data. Algoritma juga diartikan sebagai metode yang diekspresikan lewat rangkaian dan instruksi yang dijabarkan untuk menghitung. Secara garis besar, algoritma dimulai dengan imput dan kondisi awal, deskripsi, eksekusi, dan menghasilkan output. Fungsi pembuatan algoritma digunakan pada pemecahan masalah program yang rumit, baik program sederhana maupun besar, sama-sama dapat dipecahkan dengan algoritma. Algoritma juga memudahkan pembuatan program yang dikerjakan programmer dan kita dapat melakukan pendekatan top down maupun divide and conquer.</p><p>3. Algoritma berasal dari kata “algorist” yang berarti langkah menghitung dengan memanfaatkan angka arab. Karena dahulu penghitungan dengan angka arab adalah hal biasa, maka secara perlahan kata “algorithm” secara umum digunakan untuk metode perhitungan atau komputasi. Dalam algoritma, terdapat beberapa pertimbangan. Pertimbangan tersebut mempengaruhi ouput yang dihasilkan. Berdasarkan sejarahnya cara penggunaan algoritma yaitu, pembagi bersama terbesar dari dua buah bilangan bulat tak negatif adalah bilangan bulat positif terbesar yang habis membagi kedua bilangan tersebut.</p><p></p><p><strong>bintang 5 nya kaka ^^</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-apa-yang-anda-pahami-tentang-algoritma-yang-bekerja-di-dalam-sistem-komputerjawab-ya-pls-mau-dikumpulin-sekarang%e2%80%8b">
+                            9. Jelaskan apa yang Anda pahami tentang algoritma yang bekerja di dalam sistem komputerJawab ya pls mau dikumpulin sekarang!!!!!!!​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Pengertian algoritma adalah suatu urutan atau alur yang dipakai dalam perhitungan atau pemecahan masalah secara sistematis, dan dalam aktivitas pemrograman algoritma seringkali dianggap sebagai logika dalam penentuan program yang akan dibuat.</p><p><strong>Penjelasan:</strong></p><p>maaf kalo salah</p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-algoritma-keamanan-pada-sistem-operasi-jaringan">
+                            10. Tuliskan algoritma keamanan pada sistem operasi jaringan ?</h2><br />
+                        jaringan terkadang labat dan jaringa jga bisa cepat<br />
+                                            <h2 class="ez-toc-section" id="berikan-contoh-bentuk-algoritmasistemnya%e2%80%8b">
+                            11. Berikan contoh bentuk algoritma(sistemnya)​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p><strong>Penjelasan:maaf kalau salah</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-jenis-jenis-struktur-algoritma-pada-sistem-pemrogaman%e2%80%8b">
+                            12. sebutkan jenis jenis struktur algoritma pada sistem pemrogaman​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. Divide and Conquer</p><p>2. Dynamic programming</p><p>3. Metode serakah</p><p>4. Sistem Flowchart</p><p>5. Pseudo Code (Kode Semu)</p><p><strong>Penjelasan:</strong></p><p>Jenis-Jenis Algoritma</p><p>Berikut ini terdapat beberapa jenis-jenis algoritma, terdiri atas:</p><p></p><p>1. Divide and Conquer</p><p>Paradigma untuk membagi suatu permasalahan besar menjadi permasalahan-permasalahan yang lebih kecil. Pembagian masalah ini dilakukan terus menerus sampai ditemukan bagian masalah kecil yang mudah untuk dipecahkan. Singkatnya menyelesaikan keseluruhan masalah dengan membagi masalah besar dan kemudian memecahkanpermasalahan-permasalahan kecil yang terbentuk.</p><p></p><p>2. Dynamic programming</p><p>Paradigma pemrograman dinamik akan sesuai jika digunakan pada suatu masalah yang mengandung sub-struktur yang optimal (, dan mengandung beberapa bagian permasalahan yang tumpang tindih. Paradigma ini sekilas terlihat mirip dengan paradigma Divide and Conquer, sama-sama mencoba untuk membagi permasalahan menjadi sub permasalahan yang lebih kecil, tapi secara intrinsik ada perbedaan dari karakter permasalahan yang dihadapi.</p><p></p><p>3. Metode serakah</p><p>Sebuah algoritma serakah mirip dengan sebuah Pemrograman dinamik, bedanya jawaban dari submasalah tidak perlu diketahui dalam setiap tahap; dan menggunakan pilihan “serakah” apa yang dilihat terbaik pada saat itu.</p><p></p><p>4. Sistem Flowchart</p><p>Sistem Flowchart</p><p></p><p>Sistem flowchart merupakan diagram alir yang menggambarkan suatu sistem peralatan komputer yang digunakan dalam proses pengolahan data serta hubungan antar peralatan tersebut. Sistem flow chart tidak digunakan untuk menggambarkan urutan langkah untuk memecahkan masalah, tetapi hanya untuk menggambarkan prosedur dalam sistem yang dibentuk.</p><p></p><p>5. Pseudo Code (Kode Semu)</p><p>Pseudo Code (kode semu) merupakan metode yang cukup efisien untuk menggambarkan suatu algoritma . Pseudo Code dituliskan dengan menggunakan bahasa yang mudah dipahami (boleh menggunakan bahasa Indonesia) agar alur logika yang digambarkan dapat dimengeti oleh orang awam sekalipun.</p><p></p><p>Flowchart Pseudo Code (kode semu) disusun dengan tujuan untuk menggambarkan  tahap-tahap penyelesaian suatu masalah  dengan kata-kata (teks). Metode ini  mempunyai kelemahan, dimana penyusunan algoritma dengan kode semu sangat  dipengaruhi oleh tata bahasa pembuatnya, sehingga kadang-kdang sulit dipahami oleh orang lain.</p><p></p><p>Oleh karena itu kemudian dikembangkan suatu metode lain  yang dapat menggambarkan suatu algoritma program secara lebih mudah dan sederhana yaitu dengan menggunakan flowchart (diagram alir).</p><p>Runtunan (Sequence)</p><p></p><p>Urutan dalam struktur algoritma adalah bahwa instruksi untuk urutan algoritma ditangani langkah demi langkah, dari langkah pertama ke langkah terakhir.Runtunan ini pun berlaku untuk bahasa pemrograman dan harus Anda ingat itu, jika komputer Anda memproses instruksi untuk bahasa pemrograman yang Anda tulis, komputer akan memproses dan menerjemahkan bahasa pemrograman dari awal hingga selesai dari instruksi baris pertama sampai baris akhir secara beruntun.</p><p></p><p>Pemilihan (Selection)</p><p></p><p>Instruksi algoritmik pada umumnya mencakup setidaknya mengandung pemilihan (selection), ketika ada kasus yang mempunyai 2 atau lebih alternatif dalam penyelesaian maka instruksi ini akan muncul.</p><p></p><p>Misalnya, dalam kehidupan setiap sekarang dan kemudian jika Anda menyalakan komputer Anda. Langkah-langkah untuk memulai komputer Anda sangat mudah, tetapi prosesnya dapat mengambil 2 alternatif.</p><p></p><p>Pengulangan (Repitition)</p><p></p><p>Struktur dasar ketiga dari algoritma adalah pengulangan, yang berarti bahwa algoritma atau kasus penyelesaian masalah bahasa program tidak benar-benar dibedakan dari yang perlu diulang.</p><p></p><p>Algoritme itu sendiri memiliki pedoman sendiri untuk menyelesaikan kasus pemutaran data, instruksi ini membuatnya lebih mudah untuk menulis pendek dan praktis daripada menulis satu per satu.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-tigamacam-macam-algoritma-sistem-pakar">
+                            13. sebutkan tiga(macam-macam) algoritma sistem pakar</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. Metode AHP.</p><p>2. Depth-First Search (DFS) Metode Depth-First Search.</p><p>3. Breadth-First Search. Breadth-First Search.</p><p>4. Best-First Search (BFS) Best-First Search (BFS)</p><p>5. Backward Chaining (BC) dan Forward Chaining (FC)</p><p>semoga bermanfaat✓✓</p><br />
+                                            <h2 class="ez-toc-section" id="pada-algoritma-routing-link-state-terdapat-paket-kecil-dari-informasi-routing-yang-dikirim-antar-router-yang-disebut">
+                            14. pada algoritma routing link state, terdapat paket kecil dari informasi routing yang dikirim antar router yang disebut</h2><br />
+                        <p>Jawaban:Link State Advertisement(LSA)</p><p></p><p>Penjelasan:</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-dan-jelaskan-macam-macam-algoritma-dalam-sistem-operasi-jaringan">
+                            15. sebutkan dan jelaskan macam macam algoritma dalam sistem operasi jaringan</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>A.Algoritma Genetika (Genetic Algorithm, GA)</p><p>B.Divide and Conquer</p><p>C. Dynamic programming</p><p>D. Metode serakah</p><p>E. Algoritma Greedy</p><p>F. Algoritma Dijkstra</p><br />
+                                            <h2 class="ez-toc-section" id="hal-hal-yang-berhubungan-dengan-logika-dan-algoritma-sistem-komputer%e2%80%8b">
+                            16. Hal-hal yang berhubungan dengan logika dan algoritma sistem komputer​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>pemrograman</p><p>mengoperasikan komputer </p><p>penginstalan software</p><p>merakit pc</p><p><strong>Penjelasan:</strong></p><p>dsb</p><br />
+                                            <h2 class="ez-toc-section" id="dalam-algoritma-mengkonversi-suhu-dari-satuan-celcius-ke-satuan-lain-pengguna-harus-memilih-satuan-hasil-konversi-setelah-itu-algoritma-akan-menghitung-hasil-konversi-berdasarkan-pilihannya-tentu">
+                            17. Dalam algoritma mengkonversi suhu dari satuan celcius ke satuan lain , pengguna harus memilih satuan hasil konversi , setelah itu algoritma akan menghitung hasil konversi berdasarkan pilihannya. Tentukan ekspresi dan penugasan apa saja yang ada dalam algoritma tersebut. Cari informasi mengenai rumus konversi suhu</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>   a. Input besar suhu dalam satuan celcius </p><p>           b. Untuk menghitung konversi suhu dari celcius ke Reamur,masukkan besar     </p><p>               suhu ke dalam rumus berikut :</p><p>               R = 4/5 * C</p><p>           c. Untuk menghitung konversi suhu dari celcius ke Reamur,masukkan besar </p><p>               suhu ke dalam rumus berikut :</p><p>               F = 9/5 * C + 32</p><p>           d. Output akan tampil, suhu dalam Reamur dan Farenheit</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="carilah-informasi-tentang-bagaimana-hubungan-antara-algoritma-program-dan-komputer%e2%80%8b">
+                            18. carilah informasi tentang bagaimana hubungan antara algoritma, program dan komputer​</h2><br />
+                        <p>Hi.Brainly</p><p></p><p>                    Jawaban:</p><p>Komputer adalah sekumpulan beberapa perangkat keras, yang untuk mengoperasikannya dibutuhkan program sesuai dengan kebutuhan.</p><p>Program komputer sendiri membutuhkan algoritma sebagai pembuatan program.</p><p></p><p>       Hubungannya, Algoritma diumpamakan sebagai nyawa dari program tersebut sedangkan program adalah bahasa dari algoritma sedangkan komputer yaitu sebagai eksekutornya.</p><p></p><p>Contoh sederhana mengenai algoritma yang dapat kita temui dalam kehidupan sehari-hari :</p><p></p><p>Memasak mie instant</p><p>1. Memasak air hingga mendidih.</p><p>2. Membuka pembungkus mie instant.</p><p>3. Memasukkan mie kedalam air mendidih.</p><p>4. Taruh bumbu di piring/mangkuk.</p><p>5. Angkat mie jika sudah masak, lalu tiriskan air apabila mie isntant goreng.</p><p>6. Campurkan mie dengan bumbu yang ada dipirin/mangkuk.</p><p>7. Mie siap saji.</p><p></p><p>          SEMOGA BERMANFAAT</p><br />
+                                            <h2 class="ez-toc-section" id="bagaimana-bentuk-algoritma-dari-google-dalam-mencari-informasi-sapa-taukan-saya-tau-algoritmanya-membuat-sebuah-pencarian-hanya-menggunakan-earphonev%e2%80%8b">
+                            19. Bagaimana Bentuk Algoritma Dari Google Dalam Mencari Informasi.Sapa Taukan Saya tau algoritmanya membuat sebuah pencarian hanya menggunakan earphone:v​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Google menggunakan algoritma pencarian yang sangat kompleks untuk mencari informasi di internet. Meskipun algoritma ini sangat rumit, berikut adalah langkah-langkah umum yang mungkin dilibatkan dalam proses pencarian:</p><p></p><p>1. Pengindeksan: Google memiliki robot pencari yang secara teratur menjelajahi internet untuk mengumpulkan data dari berbagai situs web. Robot ini mengindeks konten halaman web, termasuk teks, gambar, dan tautan.</p><p></p><p>2. Peringkat: Setelah mengumpulkan data, Google menggunakan algoritma peringkat untuk menentukan urutan hasil pencarian. Algoritma ini mempertimbangkan berbagai faktor, seperti relevansi konten dengan kata kunci yang dicari, otoritas situs web, dan banyak faktor lainnya.</p><p></p><p>3. Pencarian pengguna: Ketika seseorang membuat pencarian, Google mencocokkan kata kunci yang dimasukkan dengan indeks yang telah dibuat. Ini dapat mencakup pencarian teks, suara, atau bahkan gambar, tergantung pada jenis pencarian yang dilakukan.</p><p></p><p>4. Hasil: Google kemudian mengembalikan hasil pencarian yang paling relevan dan diurutkan berdasarkan peringkatnya. Hasil ini dapat berupa tautan ke situs web, cuplikan teks, gambar, atau berbagai jenis konten lainnya.</p><p></p><p>5. Penyaringan dan Kustomisasi: Google juga menyediakan berbagai opsi penyaringan dan kustomisasi sehingga pengguna dapat menyempurnakan hasil pencarian sesuai kebutuhan mereka.</p><p></p><p>Penting untuk diingat bahwa algoritma Google terus berkembang, dan Google sering melakukan pembaruan untuk memastikan bahwa hasil pencarian tetap relevan dan berkualitas.</p><p><strong>Penjelasan:</strong></p><p><strong>M</strong><strong>O</strong><strong>H</strong><strong>O</strong><strong>N</strong><strong> </strong><strong>J</strong><strong>A</strong><strong>D</strong><strong>I</strong><strong>K</strong><strong>A</strong><strong>N</strong><strong> </strong><strong>J</strong><strong>A</strong><strong>W</strong><strong>A</strong><strong>B</strong><strong>A</strong><strong>N</strong><strong> </strong><strong>T</strong><strong>E</strong><strong>R</strong><strong>B</strong><strong>A</strong><strong>I</strong><strong>K</strong><strong> </strong><strong>Y</strong><strong>A</strong><strong>A</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="sekumpulan-perintah-yang-dijalankan-sesuai-dengan-urutan-algoritmapada-sistem-komputer-disebut-sebagai%e2%80%8b">
+                            20. sekumpulan perintah yang dijalankan sesuai dengan urutan algoritma,pada sistem komputer disebut sebagai?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>program</p><p><strong>Penjelasan:</strong></p><p>program yang menjalankannya </p><br />
+                                            <h2 class="ez-toc-section" id="tujuan-dari-pattern-recognation-adalah-a-membuat-algoritma-yang-berjalan-susuai-sistem-b-agar-seseorang-dapat-memprediksi-hal-yang-akan-terjadi-setelahnya-c-memecah-masalah-menjadi-bagian">
+                            21. Tujuan dari Pattern Recognation adalah... a. Membuat algoritma yang berjalan susuai sistem b. Agar seseorang dapat memprediksi hal yang akan terjadi setelahnya c. Memecah masalah menjadi bagian – bagian kecil yang lebih sederhana d. Agar dapat fokus pada informasi penting saja​</h2><br />
+                        <p>d. Agar dapat fokus pada informasi penting saja</p><p><strong>Penjelasan:</strong></p><p>Pattern Recognation ialah item pengenalan suati pola di komputer. fungsi item ini adalah untuk mengidentifikasi pola tertentu dari suatu objek, supaya kita dpt fokus melihat mengenai informasi2 penting tersebut tanpa menghiraukan informasi tak penting yg lainnya</p><p><strong>Jawaban:</strong></p><p>b. Agar seseorang dapat memprediksi hal yang akan terjadi setelahnya </p><p><strong>Penjelasan:</strong></p><p>SEMOGA BERMANFAAT</p><p>JADIKAN JAWABAN TERCERDAS</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-mengapa-algoritma-tidak-bergantung-pada-perangkat-keras-dan-sistem-operasi%e2%80%8b">
+                            22. jelaskan mengapa algoritma tidak bergantung pada perangkat keras dan sistem operasi​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Algoritma tidak bergantung pada perangkat keras dan sistem operasi karena algoritma merupakan sebuah langkah-langkah logis dan terstruktur dalam menyelesaikan suatu masalah atau tugas. </p><p></p><p><strong>Penjelasan:</strong></p><p>Algoritma tidak memperhatikan perangkat keras dan sistem operasi karena fokus pada masalah yang ingin dipecahkan dan cara terbaik untuk menyelesaikannya, tidak terkait dengan bagaimana perangkat keras dan sistem operasi menjalankan program. Oleh karena itu, algoritma dapat diterapkan pada berbagai perangkat keras dan sistem operasi yang berbeda dengan hanya perlu melakukan modifikasi kode sedikit saja.</p><p>꧁☆*αηѕωєяє∂ ву gαηαηg*☆꧂</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-algoritma-penjadwalan-sistem-operasi">
+                            23. Jelaskan algoritma penjadwalan sistem operasi</h2><br />
+                        <p>Algoritma penjadwalan sistem operasi membantu alur scheduling pada sistem serta membantu programmer di dalam pengembangan aplikasi terkait dengan sistem operasi. Terdapat banyak algoritma penjadwalan, baik algoritma penjadwalan nonpreemptive ataupun penjadwalan preemptive. Terdapat 3 algoritma dalam scheduling yang sering digunakan yakni : Round-Robin Scheduling, First-Come First-Served Scheduling atau bisa disingkat dengan FCFS, dan yang ketiga adalah Shortest Job First Scheduler atau bisa disingkat dengan SJF
+</p>Pembahasan
+Konsep dasar dari algoritma Round-Robin Scheduling yakni dengan menggunakan time-sharing. Pada dasarnya algoritma Round-Robin Scheduling sama dengan FCFS, hanya saja bersifat preemptive. Setiap proses mendapatkan waktu CPU yang disebut dengan waktu quantum atau quantum time untuk membatasi waktu proses, biasanya 1-100 milidetik, Setelah waktu habis, proses ditunda dan ditambahkan pada ready queue. Jika terdapat n proses pada ready queue serta waktu quantum q, maka setiap proses mendapatkan 1/n dari waktu CPU paling banyak q unit waktu pada 1x penjadwalan CPU. Tidak ada proses yang menunggu &gt; (n-1) unit waktu. Performansi dari algoritma round robin dapat dijelaskan sebagai berikut : jika q besar, maka yang digunakan yakni algoritma FIFO, tetapi jika q kecil maka sering terjadi context switch.
+First-Come First-Served Scheduling atau FCFS : Proses yang pertama kali meminta jatah waktu untuk menggunakan CPU akan dilayani terlebih dahulu. Dalam skema ini, proses yang meminta CPU pertama kali akan dialokasikan ke CPU pertama kali. Algoritma FCFS sendiri termasuk non-preemptive karena, sekali CPU dialokasikan pada suatu proses, maka proses tersebut tetap akan memakai CPU sampai proses tersebut melepaskannya, yakni jika proses tersebut berhenti atau meminta I/O.
+Pada penjadwalan Shortest Job First Scheduler atau SJF, proses yang mempunyai CPU burst paling kecil dilayani terlebih dahulu. Terdapat 2 skema yakni : Non Preemptive  (Jika CPU diberikan pada proses, maka tidak bisa ditunda sampai CPU burst selesai) dan Preemptive (Jika proses baru datang dengan panjang CPU burst lebih pendek dari sisa waktu proses yang saat itu sedang dieksekusi, proses ini ditunda dan diganti dengan proses baru, Skema ini disebut dengan Shortest-RemainingTime-First atau SRTF). SJF atau Shortest Job First Scheduler ialah algoritma penjadwalan yang optimal dengan rata-rata waktu tunggu yang minimal. Walaupun algoritma ini optimal, namun pada kenyataannya sulit untuk diimplementasikan, karena sulit untuk mengetahui panjang CPU burst yang berikutnya. Tetapi nilai ini dapat diprediksi. CPU burst yang berikutnya biasanya diprediksi sebagai suatu rata-rata eksponensial yang ditentukan dari CPU burst sebelumnya atau “Exponential Average”.
+Pelajari lebih lanjut
+<p>1. Materi tentang Fungsi utama dari sistem operasi adalah manajemen proses yang meliputi...... https://brainly.co.id/tugas/2136686
+</p><p>2. Materi tentang Bagaimana cara menyusun pertandingan metode angka 2 berkelana dengan sistem setengah kompetisi yang diikuti oleh 11 regu, dan bagaimana cara membuat jadwal pertandingannya? https://brainly.co.id/tugas/13864791
+</p><p>3. Materi tentang Buatlah sebuah algoritma mengganti baterai pada jam dinding. Dari algoritma yang kamu buat, cermati apakah susah termasuk ciri algoritma yang baik atau belum https://brainly.co.id/tugas/16929479
+</p><p>-----------------------------
+</p>Detil jawaban
+<p>Kelas: 10
+</p><p>Mapel: TIK
+</p><p>Bab: Bab 4 - Menggunakan Sistem Operasi
+</p><p>Kode: 10.11.4
+</p><p>#AyoBelajar
+</p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-flowchart-dari-algoritma-menyebarkan-informasi-berikut-ini1mendapatkan-informasi2apakah-informasi-ini-hoax-jika-ya-maka-informasi-tidak-disebarkan-jika-tidak-maka-pikirkan-manfaatnya-3">
+                            24. Buatlah Flowchart dari Algoritma menyebarkan informasi berikut ini!
+1)Mendapatkan Informasi
+2)Apakah informasi ini hoax? Jika Ya maka informasi tidak disebarkan, jika tidak maka pikirkan manfaatnya.
+3)Apakah informasi bermanfaat? Jika Ya maka informasi disebarkan, jika tidak maka informasi tidak disebarkan</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1.ya</p><p>2.tidak, karena byk manfaatny</p><p>3.ya</p><br />
+                                            <h2 class="ez-toc-section" id="algoritma-yang-mencari-informasi-berdasarkan-kata-kunci-mulai-dari-awal-array-hingga-akhir-array-adalah">
+                            25. Algoritma yang mencari informasi berdasarkan kata kunci mulai dari awal array hingga akhir array adalah</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Salah satu algoritma yang dapat digunakan untuk mencari informasi berdasarkan kata kunci dari awal array hingga akhir array adalah algoritma Linear Search. Berikut adalah pseudocode untuk algoritma Linear Search:</p><p></p><p>```</p><p>1. Inisialisasi posisiAwal = -1 (berarti kata kunci tidak ditemukan)</p><p>2. Untuk setiap elemen arr[i] dalam array:</p><p>     a. Jika arr[i] sama dengan kata kunci:</p><p>          i. Set posisiAwal = i</p><p>          ii. Hentikan pencarian</p><p>3. Kembalikan posisiAwal</p><p>```</p><p></p><p>Dalam algoritma ini, pencarian dimulai dari awal array dan berlanjut hingga akhir array. Jika kata kunci ditemukan, posisi awal diperbarui dengan indeks di mana kata kunci ditemukan. Jika kata kunci tidak ditemukan, posisiAwal tetap -1.</p><p></p><p>Berikut adalah contoh implementasi algoritma Linear Search dalam bahasa Python:</p><p></p><p>```python</p><p>def linear_search(arr, kata_kunci):</p><p>    posisi_awal = -1</p><p>    for i in range(len(arr)):</p><p>        if arr[i] == kata_kunci:</p><p>            posisi_awal = i</p><p>            break</p><p>    return posisi_awal</p><p>```</p><p></p><p>Anda dapat memanggil fungsi `linear_search` dengan memberikan array dan kata kunci yang ingin dicari sebagai argumen. Fungsi akan mengembalikan indeks pertama di mana kata kunci ditemukan, atau -1 jika kata kunci tidak ada dalam array.</p><p></p><p>Contoh penggunaan:</p><p></p><p>```python</p><p>array = [4, 2, 7, 1, 9, 5]</p><p>kata_kunci = 7</p><p>posisi = linear_search(array, kata_kunci)</p><p>print("Kata kunci ditemukan pada indeks:", posisi)</p><p>```</p><p></p><p>Output:</p><p>```</p><p>Kata kunci ditemukan pada indeks: 2</p><p>```</p><p></p><p>Dalam contoh di atas, kata kunci "7" ditemukan pada indeks ke-2 dalam array.</p><br />
+                                            <h2 class="ez-toc-section" id="halo-guys-ada-saran-algoritma-apa-yang-tepat-buat-sistem-rekomendasi-pemilihan-sekolah-terimakasih">
+                            26. Halo guys ! ada saran algoritma apa yang tepat buat sistem rekomendasi pemilihan sekolah? Terimakasih</h2><br />
+                        Algoritma Genetika aja Om :D<br /><br /><br /><br />
+                                            <h2 class="ez-toc-section" id="carilah-informasi-melalui-media-internet-tentang-logika-dan-algoritma">
+                            27. Carilah informasi melalui media internet tentang "logika dan algoritma"</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Logika adalah sebuah penalaran mengenai suatu hal yang berdasarkan sebuah objek. ... Logika juga tidak hanya digunakan pada pembelajaran komputer saja. Algoritma, algoritma merupakan sebuah urutan yang dibuat dalam rangka menyelesaikan sebuah masalah atau mencapai tujuan tertentu dengan cara yang masuk akal.</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-perbedaan-algoritma-pengecekan-spelling-dan-freshness-serta-peran-algoritma-tersebut-dalam-proses-pencarian-informasi-%e2%80%8b">
+                            28. Jelaskan perbedaan algoritma pengecekan spelling dan freshness, serta peran algoritma tersebut dalam proses pencarian informasi.​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>algoritma pengecekan spelling adalah algoritma yang berfungsi untuk menerjemahkan kesalahan ejaan, sedangkan algoritma fressnes berfungsi jika pengguna memasukkan topik yg sedang trending topik. peran algoritma menentukan informasi seperti apa yg dicari oleh pengguna dan apa yg mendasari pencarian tersebut.</p><p><strong>Penjelasan:</strong></p><p>itu jawaban ku, maaf klo salah ¯\_(ツ)_/¯</p><br />
+                                            <h2 class="ez-toc-section" id="siapakah-yang-menemukan-sistem-algoritma%e2%80%8b">
+                            29. Siapakah yang menemukan sistem algoritma?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p>Abu Ja'far Muhammad Ibnu Musa Al-Khwarizmi,</p><p></p><p><strong>Jawaban:</strong></p><p>Abu Ja'far Muhammad Ibnu Musa Al-Khwarizmi atau singkatnya Al-Khwarizmi.</p><p><strong>Penjelasan:</strong></p><p>Tidak ada penjelasan.</p><br />
+                                            <h2 class="ez-toc-section" id="apakah-perkaitan-antara-algoritma-dan-sistem-komputer">
+                            30. Apakah perkaitan antara algoritma dan sistem komputer?</h2><br />
+                        <p>Algoritma dan sistem komputer adalah dua hal yang tidak dapat dipisahkan, bila kita bedakan secara makna keduanya mewakili dua sisi dari komputer yaitu <strong>algoritma </strong>mewakili <strong>software </strong>dan <strong>sistem komputer</strong> mewakili <strong>hardware </strong>secara keseluruhan. Dua hal ini menggunakan resource satu sama lain sehingga menjadikan sistem komputer mampu menjalankan fungsinya secara benar. </p><p></p>Pembahasan<p>Bila kita pecah <strong>sistem komputer</strong> maka kita akan mendapati bagian-bagian utama berupa Arithmetic and Logic Unit (ALU), Random Access Memory (RAM), Memory Storage, Counter, Input dan Output. Bagian-bagian ini ada di dalam setiap komputer besar atau kecil, yang rumit atau yang sederhana karena ini adalah sistem <strong>hardware dasar</strong> pada setiap komputer.  Sistem komputer ini tentu tidak dapat berjalan dengan sendirinya karena komputer hanyalah seonggok hardware yang tidak bisa berpikir sendiri. Maka dari sini peran <strong>algoritma</strong> yang ada di dalam sebuah program yang dibuat manusia untuk <strong>menjalankan sistem</strong> komputer tersebut. Algoritma sendiri artinya sebuah proses yang dijalankan dalam melakukan perhitungan atau dalam memecahkan suatu masalah. Dengan algoritma yang tertanam di dalam software buatan manusia inilah sistem komputer berjalan dan melakukan fungsinya. </p><p></p>Pelajari lebih lanjutMateri tentang beberapa aspek ilmu komputer https://brainly.co.id/tugas/16652646Materi tentang pengertian software https://brainly.co.id/tugas/7141545Materi tentang jenis software https://brainly.co.id/tugas/2300113<p></p>Detail Jawaban<p>Kelas: -</p><p>Mapel: Teknologi Informasi</p><p>Bab: -</p><p>Kode: -</p><p><strong>#AyoBelajar #SPJ2</strong></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-perbedaan-algoritma-pengecekan-spelling-dan-freshness-serta-peran-algoritma-tersebut-dalam-proses-pencarian-informasi-pliesss-jawb-dengn-bnr">
+                            31. Jelaskan perbedaan algoritma pengecekan spelling dan freshness serta peran algoritma tersebut dalam proses pencarian informasi. pliesss jawb dengn bnr</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>algoritma pengecekan spelling adalah algoritma yang berfungsi untuk menerjemahkan kesalahan ejaan, sedangkan algoritma fressnes berfungsi jika pengguna memasukkan topik yg sedang trending topik. peran algoritma menentukan informasi seperti apa yg dicari oleh pengguna dan apa yg mendasari pencarian tersebut.</p><p><strong>Penjelasan:</strong></p><p>Semoga bermanfaat</p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-algoritma-mengenai-cara-menghapus-software-dalam-sistem-operasi-windows-7%e2%80%8b">
+                            32. buatlah algoritma mengenai cara menghapus software dalam sistem operasi windows 7​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. buka Control Panel</p><p>2. klik menu Program -&gt; Uninstall a program</p><p>3. pilih software yang ingin di hapus </p><p>4. kemudian klik Uninstall </p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="buat-activity-diagram-tentang-penjualan-online-kalian-buat-dulu-prosedur-sistem-berjalannya-algoritmanya">
+                            33. buat activity diagram tentang penjualan online, kalian buat dulu prosedur sistem berjalannya (algoritmanya).</h2><br />
+                        <p></p><p><strong>Penjelasan:</strong></p><p></p><p><strong>[Start] </strong>-&gt; (Pengguna membuka aplikasi) </p><p>-&gt; (Sistem menampilkan produk) </p><p>-&gt; (Pengguna memilih produk) </p><p>-&gt; (Sistem menampilkan rincian produk) </p><p>-&gt; (Pengguna memilih jumlah dan opsi lainnya) </p><p>-&gt; (Pengguna menambah produk ke keranjang) </p><p>-&gt; (Pengguna melanjutkan berbelanja?)</p><p>-&gt;</p><p></p>Ya -&gt; (Kembali ke menampilkan produk)Tidak -&gt; (Pengguna menuju checkout) -&gt; (Pengguna memasukkan alamat dan pembayaran) -&gt; (Sistem memverifikasi informasi) -&gt;Valid -&gt; (Sistem menghasilkan pesanan dan mengirim konfirmasi) -&gt; (Pengguna menerima konfirmasi) -&gt; (Pesanan diambil oleh kurir/sistem mengatur pengiriman) -&gt; (Pengguna dapat melacak status pengiriman) -&gt;Pesanan tiba -&gt; (Pengguna menerima pesanan dan menyelesaikan transaksi) -&gt; <p><strong>[End]</strong></p><br />
+                                            <h2 class="ez-toc-section" id="bidang-yang-mempelajari-tentang-komponen-komputer-sistem-operasi-bagaimana-data-dan-program-disimpan-dalam-memori-adalah-a-berpikir-komputasional-b-teknologi-informasi-dan-komunikasi-c-siste">
+                            34. Bidang yang mempelajari tentang komponen komputer, sistem operasi, bagaimana data dan program disimpan dalam memori adalah .... a. berpikir komputasional b. teknologi informasi dan komunikasi c. sistem komputer d. analisis data e. algoritma dan pemrograman ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>B. Teknologi Informasi dan Komunikasi</p><br />
+                                            <h2 class="ez-toc-section" id="algoritma-menghapus-software-sistem-operasi-windows-7">
+                            35. algoritma menghapus software sistem operasi windows 7</h2><br />
+                        ga payah lake algoritma diwindows. tinggal hps aja partisi C <br />
+                                            <h2 class="ez-toc-section" id="2-jika-anda-seorang-analis-sistem-apa-fungsi-tahap-algoritma-menurut-anda-jelaskan">
+                            36. 2.	Jika anda seorang Analis Sistem, apa fungsi tahap Algoritma menurut anda, jelaskan </h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Menurut saya, Algoritma berfungsi sebagai salah satu metode / cara penyelesaiian sebuah masalah tertentu. Selain sebagai problem solver, Algoritma juga membantu kita untuk mengenali suatu proses sistem step by step nya, sehingga proses bisa disederhanakan dan menjadi mudah untuk dipelajari</p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-algoritmanaturalflowchart-untuk-sistem-perpustakaan">
+                            37. buatlah algoritma(natural+flowchart) untuk sistem perpustakaan</h2><br />
+                        contoh algoritma sistem perpustakaan <br />maaf kalo salah<br />
+                                            <h2 class="ez-toc-section" id="tulis-algoritma-membuat-jus-alpukat-dengan-kondisi-memakai-sistem-atau-tidak%e2%80%8b">
+                            38. tulis algoritma membuat jus alpukat dengan kondisi memakai sistem atau tidak​</h2><br />
+                        <p></p><p>Siapkan bahan-bahan berikut:</p><p>Alpukat matang (2 buah)</p><p>Susu (200 ml)</p><p>Gula (secukupnya, sesuai selera)</p><p>Es batu (beberapa potong, opsional)</p><p>Jika Anda ingin menggunakan sistem (blender), lakukan langkah-langkah berikut:</p><p>a. Potong alpukat dan buang bijinya.</p><p>b. Masukkan alpukat, susu, gula, dan es batu ke dalam blender.</p><p>c. Tutup blender dan nyalakan untuk menghaluskan semua bahan.</p><p>d. Blender sampai Anda mendapatkan konsistensi yang diinginkan.</p><p>e. Matikan blender dan tuang jus alpukat ke dalam gelas.</p><p>Jika Anda tidak ingin menggunakan sistem, lakukan langkah-langkah berikut:</p><p>a. Potong alpukat dan buang bijinya.</p><p>b. Haluskan alpukat dengan garpu atau sendok dalam mangkuk besar.</p><p>c. Tambahkan susu dan gula ke dalam mangkuk.</p><p>d. Aduk semua bahan hingga tercampur dengan baik.</p><p>e. Jika Anda ingin menghidangkan jus dingin, tambahkan es batu.</p><p>Tuangkan jus alpukat ke dalam gelas.</p><p>Selesai</p><p>Catatan: Anda dapat menyesuaikan jumlah gula dan susu sesuai dengan preferensi rasa Anda. Jika Anda ingin jus alpukat yang lebih kental, tambahkan lebih sedikit susu atau tambahkan es batu lebih banyak untuk menjadikannya dingin.</p><p><strong>Jawaban:</strong></p><p></p><p><strong>Penjelasan:</strong></p><p>Saya akan membuat dalam bahasa C++<br /></p><p>#include &lt;iostream&gt;</p><p></p><p>using namespace std;</p><p></p><p>// Fungsi untuk membuat alpukat</p><p>void buatAlpukat() {</p><p>    // Langkah 1: Persiapkan bahan-bahan</p><p>    string alpukat = "Alpukat matang";</p><p>    string pisau = "Pisau";</p><p>    string sendok = "Sendok";</p><p>    string mangkuk = "Mangkuk";</p><p></p><p>    // Langkah 2: Potong alpukat</p><p>    cout &lt;&lt; "1. Potong alpukat menjadi dua dengan " &lt;&lt; pisau &lt;&lt; endl;</p><p>    cout &lt;&lt; "2. Keluarkan biji alpukat dengan menggunakan " &lt;&lt; sendok &lt;&lt; endl;</p><p></p><p>    // Langkah 3: Mengeluarkan daging alpukat</p><p>    cout &lt;&lt; "3. Gunakan " &lt;&lt; sendok &lt;&lt; " untuk mengupas daging alpukat dari kulitnya dengan lembut." &lt;&lt; endl;</p><p>    cout &lt;&lt; "4. Tempatkan daging alpukat yang sudah dikeluarkan ke dalam " &lt;&lt; mangkuk &lt;&lt; endl;</p><p></p><p>    // Langkah 4: Hidangkan</p><p>    cout &lt;&lt; "5. Tuangkan alpukat yang sudah siap ke dalam gelas atau mangkuk saji." &lt;&lt; endl;</p><p>    cout &lt;&lt; "6. Anda bisa menambahkan es batu atau hiasan lainnya sesuai selera." &lt;&lt; endl;</p><p></p><p>    // Langkah 6: Nikmati</p><p>    cout &lt;&lt; "7. Selamat menikmati!" &lt;&lt; endl;</p><p>}</p><p></p><p>int main() {</p><p>    // Panggil fungsi untuk membuat alpukat</p><p>    buatAlpukat();</p><p></p><p>    return 0;</p><p>}</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jenis-algoritma-penjadwalan-dengan-sistem-giliran-menggunakan-waktu-kuantum-adalah-%e2%80%8b">
+                            39. Jenis algoritma penjadwalan dengan sistem giliran menggunakan waktu kuantum adalah ....​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Algoritma penjadwalan sistem operasi membantu alur scheduling pada sistem serta membantu programmer di dalam pengembangan aplikasi terkait dengan sistem operasi. Terdapat banyak algoritma penjadwalan, baik algoritma penjadwalan nonpreemptive ataupun penjadwalan preemptive. Terdapat 3 algoritma dalam scheduling yang sering digunakan yakni : Round-Robin Scheduling, First-Come First-Served Scheduling atau bisa disingkat dengan FCFS, dan yang ketiga adalah Shortest Job First Scheduler atau bisa disingkat dengan SJF</p><br />
+                                            <h2 class="ez-toc-section" id="carilah-informasi-tentang-bagaimana-hubungan-antara-algoritma-program-dan-komputer%e2%80%8b">
+                            40. carilah informasi tentang bagaimana hubungan antara algoritma, program dan komputer​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Komputer adalah sekumpulan beberapa perangkat keras, yang untuk mengoperasikannya dibutuhkan program sesuai dengan kebutuhan.</p><p>Program komputer sendiri membutuhkan algoritma sebagai pembuatan program.</p><p></p><p>       Hubungannya, Algoritma diumpamakan sebagai nyawa dari program tersebut sedangkan program adalah bahasa dari algoritma sedangkan komputer yaitu sebagai eksekutornya.</p><p></p><p></p><p>semoga membantu</p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/uqVJc9lLknA?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ti</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://padamunegeri.github.io/pengertian-dari-vlan-pada-router.html">Pengertian Dari Vlan Pada Router</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://padamunegeri.github.io/kumpulan-kumpulan-soal-psikotes-pdf.html">Kumpulan kumpulan Soal Psikotes pdf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://padamunegeri.github.io/judul-skripsi-tentang-word-of-mouth.html">Judul Skripsi Tentang Word Of Mouth</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://padamunegeri.github.io/soal-psikotes-ui-kaskus.html">Soal Psikotes Ui Kaskus</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://padamunegeri.github.io/psikotes-icon-vector.html">Psikotes Icon Vector</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://padamunegeri.github.io/kumpulan-soal-matematika-wajib-mid-semester-kelas-12-df.html">Kumpulan Soal Matematika Wajib Mid Semester Kelas 12 Df</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://padamunegeri.github.io/jelaskan-pengertian-dari-kebutuhan-cairan-dan-elektrolit.html">Jelaskan Pengertian Dari Kebutuhan Cairan Dan Elektrolit</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://padamunegeri.github.io/kesimpulan-dari-pengertian-kurikulum.html">Kesimpulan Dari Pengertian Kurikulum</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://padamunegeri.github.io/psikotes-astra-daihatsu-motor-kaskus.html">Psikotes Astra Daihatsu Motor Kaskus</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://padamunegeri.github.io/jawan-psikotes-diri-sendiri.html">Jawan Psikotes Diri Sendiri</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://padamunegeri.github.io/babon-psikotes-paling-update-daftar-pustaka.html">Babon Psikotes Paling Update Daftar Pustaka</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://padamunegeri.github.io/penutup-berita-berupa-kesimpulan-dan-saran-disebut.html">Penutup Berita Berupa Kesimpulan Dan Saran Disebut</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://padamunegeri.github.io/pengertian-dari-dokuritsu-zyunbi-coosakai.html">Pengertian Dari Dokuritsu Zyunbi Coosakai</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://padamunegeri.github.io/apa-saja-fungsi-manajemen.html">Apa Saja Fungsi Manajemen</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://padamunegeri.github.io/setelah-psikotes.html">Setelah Psikotes</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://padamunegeri.github.io/rpp-agama-islam-beserta-soal.html">Rpp Agama Islam Beserta Soal</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://padamunegeri.github.io/soal-dan-jawaban-uts-mata-kuliah-agama-doc.html">Soal Dan Jawaban Uts Mata Kuliah Agama doc</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://padamunegeri.github.io/psikotes-skala-3-bentuk-a.html">Psikotes Skala 3 Bentuk A</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://padamunegeri.github.io/soal-soal-kelas-xi-pendidikan-agama-islam-kurikulum-2013.html">Soal soal Kelas Xi Pendidikan Agama Islam Kurikulum 2013</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://padamunegeri.github.io/soal-uas-agama-katolik-kelas-3-sd-semester-2.html">Soal Uas Agama Katolik Kelas 3 Sd Semester 2</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://padamunegeri.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://padamunegeri.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://padamunegeri.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://padamunegeri.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://padamunegeri.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>
